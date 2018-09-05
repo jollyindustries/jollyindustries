@@ -1,0 +1,172 @@
+/*===== Css Variable =====*/
+
+@font-face {
+    font-family: 'ShorelinesScript';
+    src: url('../fonts/shorelines-script/shorelines_script_bold-webfont.woff2') format('woff2'),
+    url('../fonts/shorelines-script/shorelines_script_bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+:root {
+    --primary-color-3: #f7b200;
+    --primary-hover-color-3: #c48d00;
+    --title-color-3: #111111;
+
+
+    --primary-color-2: #fd542e;
+    --primary-hover-color-2: #f62f02;
+    --title-color-2: #15233d;
+
+    --primary-color-1: #2cabf5;
+    --title-color-1: #15233d;
+    --primary-hover-color-1: #2282ba;
+}
+
+a,
+input[type="submit"] {
+    -webkit-transition: all .5s;
+    -khtml-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    outline: 0;
+}
+
+@media (max-width: 1024px) {
+    body .wrapper-container {
+        right: 0;
+        position: relative;
+        transition: all .5s;
+        height: 100%;
+        left: 0;
+        z-index: 99;
+        overflow: hidden;
+    }
+}
+
+body.demo-3 input[type="email"]:focus,
+body.demo-3 input[type="text"]:focus{
+    border-color: var(--primary-color-3) !important;
+}
+
+body.demo-2 input[type="email"]:focus,
+body.demo-2 input[type="text"]:focus{
+    border-color: var(--primary-color-2) !important;
+}
+
+body.demo-1 input[type="text"]:focus,
+body.demo-1 input[type="tel"]:focus,
+body.demo-1 textarea:focus,
+body.demo-1 input[type="email"]:focus,
+body.demo-1 input[type="search"]:focus{
+    border-color: var(--primary-color-1) !important;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="search"] {
+
+    height: 40px;
+    padding: 0 20px;
+    font-size: 16px;
+    border: 1px solid #e6e6e6;
+    display: inline-block;
+}
+
+textarea {
+    padding: 20px;
+    font-size: 16px;
+    border: 1px solid #e6e6e6;
+    display: inline-block;
+    outline: 0;
+}
+
+#wrapper-container {
+    position: relative;
+    overflow: hidden;
+}
+
+/*Home 1*/
+
+body {
+    font-family: Abel;
+    font-size: 18px;
+    line-height: 1.44em;
+    letter-spacing: 0.5px;
+    color: #8a8a8a;
+    text-transform: none;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #fff;
+}
+
+
+body a {
+    color: var(--title-color-1);
+}
+
+body.demo-3 a:hover {
+    color: var(--primary-color-1);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Condensed';
+    color: var(--title-color-1);
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.6em;
+}
+
+/*Home 2*/
+
+body.demo-2 {
+    color: #8a8a8a;
+}
+
+body.demo-2 a {
+    color: var(--title-color-2);
+}
+
+body.demo-2 a:hover {
+    color: var(--primary-color-2);
+}
+
+body.demo-2 h1,
+body.demo-2 h2,
+body.demo-2 h3,
+body.demo-2 h4,
+body.demo-2 h5,
+body.demo-2 h6 {
+    color: var(--title-color-2);
+}
+
+body.demo-3 {
+    color: #8a8a8a;
+}
+
+body.demo-3 a {
+    color: var(--title-color-3);
+}
+
+body.demo-3 a:hover {
+    color: var(--primary-color-3);
+}
+
+body.demo-3 h1,
+body.demo-3 h2,
+body.demo-3 h3,
+body.demo-3 h4,
+body.demo-3 h5,
+body.demo-3 h6 {
+    color: var(--title-color-3);
+}
+
+@-webkit-keyframes circle { 0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); } 100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }}
+@keyframes circle { 0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); } 100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }}
+
+

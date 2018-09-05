@@ -1,0 +1,26 @@
+/*===================== TABLE OF CONTENT =======================
+1.  Reset Styling
+2.  General Styling (All variable CSS)
+3.  Header 1 ( 3 style)
+4.  Home content (Home 1, Home 2, Home 3)
+5.  Page default (Contact, About, ...)
+6.  Sidebar (Shop, Post, Service, Project)
+7.  Shop (Category, Single)
+8.  Project (Category, Single)
+9.  Footer
+10. Responsive
+=============================================================*/
+
+@import "reset-styles.css";
+@import "general.css";
+
+@import "header.css";
+@import "home.css";
+@import "pages.css";
+@import "blog.css";
+@import "sidebar.css";
+@import "shop.css";
+@import "project.css";
+@import "footer.css";
+
+@import "responsive.css";

@@ -1,0 +1,495 @@
+/*====== Archive 3c =====*/
+.project-archive .filter-controls {
+    margin: 0 0 55px;
+    list-style: none;
+    text-align: center;
+}
+
+.project-archive .filter-controls li {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 25px;
+}
+
+.project-archive .filter-controls li a {
+    position: relative;
+    font-size: 18px;
+    font-weight: normal;
+    color: #8a8a8a;
+    padding-bottom: 7px;
+    display: inline-block;
+}
+.project-archive .filter-controls li a:hover,
+.project-archive.filter-controls a.active {
+    color: var(--primary-color-1);
+}
+.project-archive .filter-controls li a:after {
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    content: '';
+    background-color: transparent;
+    transition: all .5s;
+}
+
+.project-archive .filter-controls a.active:after {
+    background-color: var(--primary-color-1);
+}
+
+.project-archive .wrapper-project .item {
+    padding-bottom: 30px;
+}
+
+.wrapper-project .item .project {
+    position: relative;
+    overflow: hidden;
+}
+
+.wrapper-project .item .project:hover .featured-image:before {
+   opacity: .7;
+}
+
+.wrapper-project .item .project:hover .content {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.wrapper-project .item .project .featured-image:before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 1;
+    left: 10px;
+    right: 10px;
+    top: 10px;
+    bottom: 10px;
+    opacity: 0;
+    background-color: var(--title-color-1);
+    transition: opacity .3s;
+}
+
+.wrapper-project .item .project .content {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    top: 10px;
+    bottom: 10px;
+    z-index: 3;
+    text-align: center;
+    opacity: 0;
+    color: #fff;
+    transform: translateY(20px);
+    transition: all .5s;
+
+}
+
+.wrapper-project .item .project .content .inner {
+    position: absolute;
+    top: 50%;
+    padding: 0 30px;
+    transform: translateY(-50%);
+    transition: .3s;
+}
+
+.wrapper-project .item .project .content h3 {
+    position: relative;
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: 0.9px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 6px;
+}
+
+.wrapper-project .item .project .content h3 a {
+    color: #fff;
+}
+
+.wrapper-project .item .project .content h3 a:hover {
+    color: var(--primary-color-1);
+}
+
+.wrapper-project .item .project .content h3:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    width: 30px;
+    height: 1px;
+    background-color: var(--primary-color-1);
+}
+
+.wrapper-project .item .project .content .description {
+    margin-bottom: 10px;
+    color: #bfbfbf;
+}
+
+.wrapper-project .item .project .content a.button-link {
+    position: relative;
+    text-transform: uppercase;
+    color: var(--primary-color-1);
+    padding-bottom: 1px;
+}
+
+.wrapper-project .item .project .content a.button-link:hover:after {
+    display: none;
+}
+
+.wrapper-project .item .project .content a.button-link:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    transition: all .5s;
+    background-color: var(--primary-color-1);
+}
+
+.project-page .loop-pagination {
+    margin-top: 20px;
+}
+
+.wrapper-project .col-sm-4.item .project .featured-image:before {
+    background: #000000;
+}
+
+.wrapper-project .col-sm-4.item .project .content h3 {
+   font-size: 22px;
+}
+
+.wrapper-project .col-sm-4.item .project .content .inner {
+    padding: 0 10%;
+}
+
+.wrapper-project .col-sm-4.item .project .content h3 {
+    padding-bottom: 7px;
+}
+
+/*===== Project single =======*/
+.project-single-content article .social-share {
+    position: absolute;
+    top: 3px;
+    left: -77px;
+    z-index: 9;
+}
+
+.project-single-content article .description blockquote {
+    border-left: 5px solid var(--primary-color-1);
+    font-family: Times;
+    font-style: italic;
+    font-weight: 700;
+    padding-left: 15px;
+    margin: 30px 0;
+}
+
+.project-single-content article  ul.project-media {
+    margin-top: 50px;
+}
+
+.project-single-content article  ul.project-media a {
+   display: block;
+    cursor: -webkit-zoom-in;
+}
+
+.project-single-content article  ul.project-media a:hover {
+    opacity: .8;
+}
+
+ul.project-media a {
+    outline: 0;
+}
+
+.project-single-content article  ul.project-media li {
+    margin-bottom: 30px;
+}
+
+.project-single-content article .summary  {
+   padding-right: 50px;
+}
+
+.project-single-content article .secondary  .info {
+    background-color: #fafafa;
+    padding: 40px 30px;
+}
+
+.project-single-content article .project-media,
+.project-single-content article .list-info,
+.project-navigation {
+   list-style: none;
+    margin: 0;
+}
+
+.project-single-content article .secondary  .list-info li {
+    margin-top: 25px;
+}
+
+.project-single-content article .secondary  .list-info li span.lnr {
+    font-family: "Roboto Condensed";
+    font-size: 18px;
+    font-weight: normal;
+    width: 50%;
+    float: left;
+    color: var(--title-color-1);
+}
+
+.project-single-content a.download {
+    margin-top: 50px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--primary-color-1);
+    font-size: 14px;
+    display: block;
+    border: solid 1px var(--primary-color-1);
+}
+
+.project-single-content a.download:hover {
+    color: #fff;
+    background: var(--primary-color-1);
+}
+
+.project-single-content a.download:hover i {
+    color: #fff;
+}
+
+.project-single-content a.download i {
+    transition: all .5s;
+    font-size: 26px;
+    color: var(--primary-color-1);
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.project-single-content article .secondary  .list-info li span.value {
+   float: left;
+   width: 50%;
+}
+
+.project-single-content article .secondary  .list-info li span.lnr:before {
+    font-family: 'Linearicons';
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: 0.6px;
+    color: var(--primary-color-1);
+    margin-right: 15px;
+}
+.project-navigation li {
+    width: 33.333%;
+    float: left;
+}
+
+.project-navigation li a {
+    color: rgba(21, 35, 61, 0.2);
+    font-size: 40px;
+    font-weight: normal;
+}
+
+.project-navigation .archive {
+    text-align: center;
+
+}
+
+.project-navigation .next {
+    text-align: right;
+}
+
+.project-navigation:hover {
+    border-color: var(--primary-color-1);
+}
+
+.project-navigation  {
+    margin: 100px 0;
+    padding: 28px 0;
+    border-top: 1px dashed rgba(0,0,0,.2);
+    border-bottom: 1px dashed rgba(0,0,0,.2);
+}
+
+.project-single-content .related .wd-title {
+    margin-bottom: 50px;
+}
+
+.project-single-content article .project-media.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.project-media img {
+    width: 100%;
+}
+
+.summary-images .project-media {
+    margin-top: 2px !important;
+}
+
+.secondary-info .list-info li {
+    margin-top: 20px;
+}
+
+.secondary-info .list-info li span{
+    font-family: "Roboto Condensed";
+    font-size: 18px;
+    font-weight: normal;
+    color: var(--title-color-1);
+    margin-right: 18px;
+}
+
+.secondary-info div.description {
+    margin-bottom: 40px;
+}
+
+.project-single-content .media-slider #carousel li {
+    padding-right: 28px;
+}
+
+.sc-challenge {
+    margin-top: 40px;
+}
+
+.sc-challenge .item span {
+    font-size: 24px;
+    margin-right: 20px;
+    padding-top: 4px;
+    line-height: 1.08;
+    color: var(--primary-color-1);
+}
+
+.sc-challenge .item p {
+    line-height: 1.44;
+}
+
+.sc-challenge .item {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.single-slides .project-navigation {
+    margin-top: 70px;
+}
+
+.project-title {
+    font-size: 46px;
+    font-weight: bold;
+    letter-spacing: 1.8px;
+    color: var(--title-color-1);
+    line-height: normal;
+    margin-bottom: 35px;
+}
+
+.project-single-content article .social-share.horizontal {
+    position: static;
+    float: left;
+    text-align: left;
+    padding-top: 3px;
+    width: 55px;
+}
+
+.single-slides .image-slides  .item {
+    height: 680px;
+}
+
+.owl-theme .owl-nav {
+    margin-top: 0;
+}
+
+.single-slides #slider .item img {
+   max-height: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.single-slides .owl-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.single-slides .owl-theme .owl-dots .owl-dot.active span,
+.single-slides .owl-theme .owl-dots .owl-dot:hover span{
+    opacity: 1;
+    height: 5px;
+    background-color: var(--primary-color-1);
+}
+
+.single-slides .owl-theme .owl-dots .owl-dot span {
+    display: inline-block;
+    width: 50px;
+    height: 2px;
+    opacity: 0.5;
+    border-radius: 0;
+    transition: all .3s;
+    background-color: #999999;
+}
+
+.single-slides .owl-theme .owl-nav >div {
+    font-size: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    margin: 0;
+    padding: 0;
+    background: none;
+
+}
+
+.single-slides .owl-theme .owl-nav > div {
+    text-align: center;
+    line-height: 40px;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    border-radius: 50%;
+    border: solid 1px rgba(255, 255, 255, 0.7);
+    font-family: 'Linearicons';
+    font-size: 0;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.single-slides .owl-theme .owl-prev {
+    left: 30px;
+}
+
+.single-slides .owl-theme .owl-prev:before {
+    font-size: 14px;
+    content: "\e875";
+}
+
+.single-slides .owl-theme .owl-next {
+    right: 30px;
+}
+
+.single-slides .owl-theme .owl-next:before {
+    content: "\e876";
+    font-size: 14px;
+}
+
+.single-slides:hover .owl-theme .owl-nav > div {
+    border-color: var(--primary-color-1);
+    color: #fff;
+    background: var(--primary-color-1);
+}
+
+.single-slides:hover .owl-theme .owl-nav > div:hover {
+    background: var(--primary-hover-color-1) !important;
+    border-color: var(--primary-hover-color-1) !important;
+
+}
+
+.single-slides .image-slides .item img {
+    height: 100%;
+    object-fit: cover;
+}

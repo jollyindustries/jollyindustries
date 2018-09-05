@@ -1,0 +1,355 @@
+/*===== Blog =====*/
+
+.wd-title {
+    font-size: 26px;
+    font-weight: 300;
+    position: relative;
+    margin-bottom: 30px;
+    line-height: inherit;
+    padding-bottom: 17px;
+    letter-spacing: 1px;
+}
+
+.wd-title:after {
+    background-color: #999999;
+    width: 40px;
+    content: '';
+    display: inline-block;
+    right: auto;
+    left: 0;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+}
+
+.wd-title.text-center:after {
+    right: 0;
+    margin: 0 auto;
+}
+
+.widget-area .wd {
+    margin-bottom: 50px;
+}
+.widget-area .wd-search form{
+    position: relative;
+}
+
+.widget-area .wd-search input[type="search"]{
+    width: 100%;
+    line-height: 40px;
+    height: 40px;
+    padding: 0 20px;
+    border-radius: 20px;
+    border: solid 1px #eeeeee;
+    color: #cccccc;
+}
+
+.widget-area .wd-search button {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    width: 40px;
+    background: none;
+    height: 40px;
+    font-size: 16px;
+    color: #cccccc;
+    cursor: pointer;
+}
+
+.widget-area .wd-search button:hover {
+    color: var(--primary-color-1);
+}
+
+.wd-categories {
+    padding: 30px;
+    background-color: #fafafa;
+}
+
+.wd-categories ul {
+    margin: 0;
+    list-style: none;
+}
+
+.wd-categories ul li {
+     margin: 0;
+     padding-top: 15px;
+     padding-bottom: 15px;
+     padding-left: 10px;
+     border-bottom: 1px dashed #e7e7e7;
+     line-height: 20px;
+     display: block;
+ }
+
+.wd-categories ul li:last-child {
+    border-bottom: none;
+}
+
+.wd-categories ul li a {
+   display: block;
+}
+
+.wd-categories ul li.active a {
+    color: var(--primary-color-1);
+}
+
+.wd-categories ul li i {
+    font-size: 18px;
+    opacity: 0;
+    margin-left: -10px;
+    -webkit-transition: all .3s;
+    -khtml-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+.wd-categories ul li a:hover i,
+.wd-categories ul li.active a i  {
+    margin-left: 1px;
+    margin-right: 10px;
+    opacity: 1;
+    color: var(--primary-color-1);
+}
+
+.wd-recent-post .post-image {
+    width: 86px;
+    height: 86px;
+    float: left;
+    margin-right: 20px;
+}
+
+.wd-recent-post .post-content {
+    width: calc(100% - 106px);
+    float: left;
+}
+
+.wd-recent-post .post-title a {
+    color: var(--title-color-1);
+}
+
+.wd-recent-post .post-title a:hover {
+    color: var(--primary-color-1);
+}
+
+.wd-recent-post .post-title {
+    font-size: 18px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.wd-recent-post .post-meta {
+    text-transform: uppercase;
+}
+
+.wd-recent-post .post {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.wd-tags ul {
+    margin: 0;
+    list-style: none;
+}
+
+.wd-tags ul li {
+    display: inline-block;
+    margin-right: 7px;
+    margin-bottom: 10px;
+}
+
+.wd-tags ul li a {
+    padding: 5px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    border: solid 1px #eeeeee;
+}
+
+.wd-tags ul li a:hover {
+    background: var(--primary-color-1);
+    border-color: var(--primary-color-1);
+    color: #ffffff;
+}
+
+.wd-image-box .image-box {
+    position: relative;
+}
+
+.wd-image-box .image-box:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    content: "";
+    opacity: 0.8;
+    background-color: var(--title-color-1);
+}
+
+.wd-image-box .image-box .content {
+     position: absolute;
+     color: #fff;
+     top: 50%;
+     left: 50%;
+     z-index: 1;
+    text-align: center;
+     transform: translate(-50%,-50%);
+ }
+
+.wd-image-box .image-box .content a {
+    height: 40px;
+    display: inline-block;
+    padding: 0 30px;
+    text-transform: uppercase;
+    line-height: 40px;
+    color: #ffffff;
+    border-radius: 20px;
+    background-color:  var(--primary-color-1);
+}
+
+.wd-image-box .image-box .content a:hover {
+    color:  #fff;
+    background-color: var(--primary-hover-color-1);
+}
+
+.wd-image-box .image-box .content h2 {
+    margin-top: -10px;
+    margin-bottom: 0;
+    font-size: 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 1.4px;
+}
+
+
+.wd-price label{
+    color: #8a8a8a;
+    margin-bottom: 0;
+}
+
+.wd-price p{
+    margin-top: 20px;
+}
+
+.wd-price input {
+    color: #8a8a8a;
+    height: auto;
+    padding: 0 !important;
+}
+
+.wd-price button {
+    cursor: pointer;
+    box-shadow: none;
+    text-decoration: underline;
+    padding: 0;
+    font-size: 16px;
+    background: none;
+    color: var(--primary-color-1);
+    text-transform: uppercase;
+}
+
+.wd-price input {
+    float: right;
+    text-align: right;
+}
+
+.wd-price button:hover {
+    text-decoration: none;
+}
+
+#slider-range {
+    background-color: #ccc;
+    height: 2px;
+}
+
+.ui-slider-range {
+    background-color: var(--primary-color-1);
+    height: 4px !important;
+    top: -2px !important;
+}
+
+#slider-range span {
+    border: none !important;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    outline: 0 !important;
+    top: -8px !important;
+    background-color: var(--primary-color-1);
+}
+
+.wd-recent-post.product .post-image {
+    border: solid 1px #f3f3f3;
+}
+
+.wd-recent-post.product .post-image:hover {
+    border-color: var(--primary-color-1);
+}
+
+.wd-recent-post.product .post-meta {
+    color: var(--primary-color-1);
+
+}
+
+.wd-recent-post.product .post-meta ins {
+    text-decoration: none;
+}
+
+.wd-recent-post.product .post-meta del {
+    color: #8e8e8e;
+}
+
+.widget-area >.wd:last-child,
+.theiaStickySidebar >.wd:last-child {
+    margin-bottom: 0;
+}
+
+.wd-download ul {
+    list-style: none;
+    margin: 0;
+}
+
+.wd-download ul li {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.wd-download ul li a {
+    padding: 15px 20px;
+   display: block;
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 0.4px;
+    color: #8a8a8a;
+    text-transform: uppercase;
+    border: solid 1px #cccccc;
+}
+
+.wd-download ul li a:hover {
+    border-color: var(--primary-color-1);
+    background: var(--primary-color-1);
+    color: #fff;
+}
+
+.wd-download ul li a i {
+    font-size: 26px;
+    margin-right: 10px;
+    vertical-align: bottom;
+}
+
+.wd-projects .row {
+    margin: 0 -7.5px;
+}
+
+.wd-projects .row >div{
+    padding: 0 7.5px;
+    margin-bottom: 15px;
+}
+
+.wd-projects  a img:hover {
+    opacity: .8;
+}
